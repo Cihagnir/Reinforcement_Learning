@@ -1,0 +1,21 @@
+
+
+Agent : 
+  alpha : 0.5 # aka tempature
+  gamma : 0.99
+  polyak : 0.0005
+  epsilon : 0.000001
+  q_net_lr : 0.0001
+  policy_lr : 0.0001
+
+Train : 
+  batch_size : 2048
+  memory_size : 1000000
+  epoch_number : 3000000
+  exploration_limit : 100000
+  target_update_freq : 200
+
+Logging : 
+  log_path : runs/
+  model_path : models/
+
